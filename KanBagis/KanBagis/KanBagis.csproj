@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6E73224-1720-4B01-A8F7-DA3DDC9453E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KanBagis</RootNamespace>
+    <AssemblyName>KanBagis</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donor.Designer.cs">
+      <DependentUpon>Donor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonorListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonorListesi.Designer.cs">
+      <DependentUpon>DonorListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hasta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hasta.Designer.cs">
+      <DependentUpon>Hasta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaListesi.Designer.cs">
+      <DependentUpon>HastaListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kanbagis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kanbagis.Designer.cs">
+      <DependentUpon>kanbagis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kanbagisDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kanbagisDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kanbagisDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kanbagisDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kanbagisDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kanbagisDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kanbagisDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kanbagisDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kanbagisDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kanbagisDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kanbagisDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kanbagisDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kanbagisDataSet61.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kanbagisDataSet61.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kanbagisDataSet71.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kanbagisDataSet71.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kanbagisDataSet81.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kanbagisDataSet81.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kanbagisDataSet91.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kanbagisDataSet91.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KanBagisiSistemiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KanBagisiSistemiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KanStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KanStok.Designer.cs">
+      <DependentUpon>KanStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donor.resx">
+      <DependentUpon>Donor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonorListesi.resx">
+      <DependentUpon>DonorListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hasta.resx">
+      <DependentUpon>Hasta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaListesi.resx">
+      <DependentUpon>HastaListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kanbagis.resx">
+      <DependentUpon>kanbagis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KanStok.resx">
+      <DependentUpon>KanStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="kanbagisDataSet.xsc">
+      <DependentUpon>kanbagisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kanbagisDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kanbagisDataSet.xss">
+      <DependentUpon>kanbagisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet1.xsc">
+      <DependentUpon>kanbagisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kanbagisDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kanbagisDataSet1.xss">
+      <DependentUpon>kanbagisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet2.xsc">
+      <DependentUpon>kanbagisDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kanbagisDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kanbagisDataSet2.xss">
+      <DependentUpon>kanbagisDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet3.xsc">
+      <DependentUpon>kanbagisDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kanbagisDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kanbagisDataSet3.xss">
+      <DependentUpon>kanbagisDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet4.xsc">
+      <DependentUpon>kanbagisDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kanbagisDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kanbagisDataSet4.xss">
+      <DependentUpon>kanbagisDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet5.xsc">
+      <DependentUpon>kanbagisDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kanbagisDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kanbagisDataSet5.xss">
+      <DependentUpon>kanbagisDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet61.xsc">
+      <DependentUpon>kanbagisDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet61.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kanbagisDataSet61.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kanbagisDataSet61.xss">
+      <DependentUpon>kanbagisDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet71.xsc">
+      <DependentUpon>kanbagisDataSet71.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet71.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kanbagisDataSet71.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kanbagisDataSet71.xss">
+      <DependentUpon>kanbagisDataSet71.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet81.xsc">
+      <DependentUpon>kanbagisDataSet81.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet81.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kanbagisDataSet81.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kanbagisDataSet81.xss">
+      <DependentUpon>kanbagisDataSet81.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet91.xsc">
+      <DependentUpon>kanbagisDataSet91.xsd</DependentUpon>
+    </None>
+    <None Include="kanbagisDataSet91.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kanbagisDataSet91.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kanbagisDataSet91.xss">
+      <DependentUpon>kanbagisDataSet91.xsd</DependentUpon>
+    </None>
+    <None Include="KanBagisiSistemiDataSet.xsc">
+      <DependentUpon>KanBagisiSistemiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KanBagisiSistemiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KanBagisiSistemiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KanBagisiSistemiDataSet.xss">
+      <DependentUpon>KanBagisiSistemiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-12-28 164119.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bir-damla-kan-bin-damla-umut.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
